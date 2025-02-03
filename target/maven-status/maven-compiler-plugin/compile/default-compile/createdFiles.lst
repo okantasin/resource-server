@@ -1,0 +1,5 @@
+com/template/resourceserver/security/KeycloakRoleConverter.class
+com/template/resourceserver/security/SecurityConfig.class
+com/template/resourceserver/controller/UserController.class
+com/template/resourceserver/controller/AuthTokenController.class
+com/template/resourceserver/ResourceServerApplication.class

@@ -1,0 +1,5 @@
+/Users/okan/Desktop/template-workspace/resource-server/src/main/java/com/template/resourceserver/ResourceServerApplication.java
+/Users/okan/Desktop/template-workspace/resource-server/src/main/java/com/template/resourceserver/controller/AuthTokenController.java
+/Users/okan/Desktop/template-workspace/resource-server/src/main/java/com/template/resourceserver/controller/UserController.java
+/Users/okan/Desktop/template-workspace/resource-server/src/main/java/com/template/resourceserver/security/KeycloakRoleConverter.java
+/Users/okan/Desktop/template-workspace/resource-server/src/main/java/com/template/resourceserver/security/SecurityConfig.java
