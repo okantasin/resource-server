@@ -1,7 +1,9 @@
 server:
-  port: 8081
+  port: 0
 
 spring:
+  application:
+    name: resource-server  # Eureka'ya kayıt olacak servis adı
   security:
     oauth2:
       resource server:
@@ -9,8 +11,15 @@ spring:
           issuer-uri: http://localhost:8080/realms/templatesecurityapp
           jwk-set-uri: http://localhost:8080/realms/templatesecurityapp/protocol/openid-connect/certs
 
-logging:
-  level:
-    org:
-      springframework:
-        security: DEBUG
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # Eureka Server'ın adresi
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Tüm endpoint'leri aç
